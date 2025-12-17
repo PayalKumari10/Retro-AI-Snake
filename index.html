@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Snake Game - AI Coach Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="game-header">
+            <h1 class="game-title">🐍 RETRO SNAKE</h1>
+            <p class="game-subtitle">Classic Arcade Revival</p>
+        </header>
+
+        <!-- Game Info Panel -->
+        <div class="info-panel">
+            <div class="score-display">
+                <span class="label">SCORE:</span>
+                <span id="score" class="value">0</span>
+            </div>
+            <div class="high-score-display">
+                <span class="label">HIGH:</span>
+                <span id="highScore" class="value">0</span>
+            </div>
+            <div class="speed-display">
+                <span class="label">SPEED:</span>
+                <span id="speed" class="value">1</span>
+            </div>
+        </div>
+
+        <!-- AI Coach Panel -->
+        <div class="ai-coach-panel" id="aiCoachPanel">
+            <div class="coach-header">
+                <span class="coach-icon">🤖</span>
+                <span class="coach-title">AI COACH</span>
+            </div>
+            <div class="coach-message" id="coachMessage">
+                Press START to begin your journey!
+            </div>
+        </div>
+
+        <!-- Game Canvas Container -->
+        <div class="game-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div class="game-overlay" id="gameOverlay">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">RETRO SNAKE</h2>
+                    <p id="overlayMessage">Get ready to play!</p>
+                    <button id="startButton" class="game-button">START GAME</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Panel -->
+        <div class="control-panel">
+            <button id="pauseButton" class="control-button" disabled>
+                <span id="pauseIcon">⏸</span> PAUSE
+            </button>
+            <button id="restartButton" class="control-button" disabled>
+                <span>🔄</span> RESTART
+            </button>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3>CONTROLS</h3>
+            <div class="control-grid">
+                <div class="control-item">
+                    <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>
+                    <span>Move Snake</span>
+                </div>
+                <div class="control-item">
+                    <kbd>SPACE</kbd>
+                    <span>Pause/Resume</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <p>Crafted with ❤️ by Payal Kumari | Retro Snake with an AI Coach</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="aiCoach.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
