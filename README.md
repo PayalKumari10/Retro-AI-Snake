@@ -149,7 +149,7 @@ This project demonstrates:
 
 ## 📄 License
 
-Free to use, modify, and distribute. Built for learning and fun!
+MIT
 
 ---
 
